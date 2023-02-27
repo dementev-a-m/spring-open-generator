@@ -1,0 +1,1 @@
+{{#isBodyParam}}{{>paramDoc}}{{#useBeanValidation}} @Valid{{>beanValidationBodyParams}}{{/useBeanValidation}} @RequestBody{{^required}}(required = false){{/required}} {{{dataType}}} {{paramName}}{{/isBodyParam}}
